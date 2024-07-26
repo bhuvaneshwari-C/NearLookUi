@@ -1,0 +1,271 @@
+.logo{
+  width:180px;
+  height:90px;
+}
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom:10px;
+}
+.nav_left {
+  display: flex;
+  justify-content: center;
+  gap:5px;
+  align-items: center;
+  margin-right:20px;
+}
+.cart_count {
+  background-color: coral;
+  width: 22px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -19px;
+  border-radius: 11px;
+  font-size: 14px;
+  margin-left: -23px;
+  color: white;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+.welcome {
+  font-size: 15px;
+  color: gray;
+}
+.nearlook {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+.heart_icon,
+.cart_icon {
+  font-size: 34px;
+  margin-right: 10px;
+}
+.icon{
+  font-size:30px;
+}
+nav{
+  width: 100%;
+}
+.toggle-menu{
+ display:none;
+ 
+}
+.logo1{
+  width:110px;
+  height:70px;
+}
+.toggle-btn{
+  color:black;
+  font-size:20px;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+.toggle-dropDown{
+  width:140px;
+  height:80px;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right:20px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.search-container{
+  position:relative;
+  display:block;
+  margin-right:10px;
+  margin-left:130px;
+}
+.search-input-container{
+  background-color: white;
+  display:flex;
+  padding:20px;
+  margin-left:-240px;
+  position: absolute;
+  align-items: center;
+  top: 40px;
+  left:0;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.search-input-container input{
+  height:50px;
+  width:210px;
+  padding-left:15px;
+  outline:none;
+  border:1px solid gray;
+}
+.search-input-container input:hover{
+  border-color:orange;
+}
+.search-input i{
+  margin-left:10px;
+}
+.search-button i{
+  font-size:20px;
+}
+.search-input-container button{
+  margin-left:-29px;
+  background-color: white;
+  border:none;
+  margin-top:6px;
+  cursor:pointer;
+}
+.search-input-container button i{
+  font-size:20px;
+}
+.search-button{
+  background-color: white;
+  border:none;
+}
+.search-input{
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+.dropDown{
+  margin-right:35px;
+}
+.toggle-menu-icons{
+  display:flex;
+}
+.cart_count1 {
+  background-color: coral;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -9px;
+  border-radius: 11px;
+  font-size: 14px;
+  margin-left: -18px;
+  color: white;
+}
+.heart_icon1,
+.cart_icon1 {
+  font-size: 27px;
+  margin-right: 10px;
+}
+@media (width: 320px){
+.logo1{
+  width:100px;
+  height:60px;
+}
+.toggle-menu{
+  display:flex;
+  align-items: center;
+  z-index: 1; 
+}
+  .nav_container{
+    display:none;
+  }
+  .heart_icon1,
+  .cart_icon1 {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.cart_count1{
+  width: 18px;
+  height: 18px;
+}
+.search-input-container input{
+  width:190px;
+}
+.search-input-container button{
+  margin-left:-100px;
+}
+.search-input-container{
+  margin-left:-195px;
+}
+} 
+@media (min-width: 375px) and (max-width:399px){
+  .toggle-menu{
+    display:flex;
+    align-items: center;
+  }
+    .nav_container{
+      display:none;
+    }
+    .heart_icon1,
+    .cart_icon1 {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+  .search-container{
+    margin-left:165px;
+  }
+}
+@media(min-width:400px) and (max-width:470px){
+  .toggle-menu{
+    display:flex;
+    align-items: center;
+    gap:10px;
+  }
+    .nav_container{
+      display:none;
+    }
+    .search-container{
+      margin-left:185px;
+    }
+}
+@media (width: 1024px) {
+  .logo {
+    width: 120px;
+    height: 80px;
+  }
+  .cart_count {
+    height: 20px;
+    width: 23px;
+    border-radius: 23px;
+  }
+  .heart_icon,
+  .cart_icon {
+    font-size: 35px;
+   }
+}
+@media (width: 768px) {
+  .logo {
+    width: 120px;
+    height: 80px;
+  }
+  .cart_count {
+    height: 17px;
+    width: 18px;
+    border-radius: 23px;
+  }
+  .heart_icon,
+  .cart_icon {
+    font-size: 30px;
+   }
+   .icon {
+  font-size:25px;
+   }
+   .nav_left{
+          margin-right:5px;
+   }
+   .search-button{
+    margin-left:10px;
+   }
+}

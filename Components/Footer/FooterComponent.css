@@ -1,0 +1,147 @@
+.footer1 {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+    margin-left:10px;
+}
+.footer-section1{
+    flex: 1 1 200px;
+    margin: 10px;
+    margin-left:10px;
+    margin-top:40px;
+}
+.footer-logo {
+    width: 150px;
+    height:100px;
+}
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;  
+}
+.contact-info li i {
+    margin-right: 10px;
+    color:orange;
+}
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section1 ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 15px 0;
+}
+.footer-section1 ul li {
+    margin: 5px 0;
+   padding:10px;
+}
+.app-buttons img {
+    width: 110px;
+    height:63px;
+    margin-right: 10px;
+}
+.payment-methods img{
+    width:400px;
+    height:100px;
+}
+.googlePlay{
+    height:90px;
+}
+.app-buttons{
+    display:flex;
+}
+.payment-methods img {
+    width: 250px;
+    margin-right: 10px;
+}
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 20px;  
+}
+.copyRights {
+    width:250px;
+}
+.copyRights span{
+    color:orange;
+}
+.footer-bottom p {
+    flex: 1 1 100%;
+    margin: 5px 0;
+}
+.footer-contacts {
+    display: flex;
+} 
+.footer-contacts span {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #777;
+}
+.social-media div {
+    display: flex;
+}
+.social-media i {
+    font-size: 18px;
+    margin: 0 10px;
+    color:orange;
+}
+.subscribe{
+    color:#afafaf;
+}
+.footer-contacts .num{
+    color:orange;
+}
+    @media (width: 1024px){
+        .footer1{
+            padding:5px;
+        }
+        .footer-section {
+            flex: 1 1 150px;
+            margin: 5px;
+            margin-left:10px;
+        }
+        .footer-section1{
+            flex: 1 1 100px;
+            margin: 7px;
+            margin-top:40px;
+        }
+        .googlePlay{
+            width:50px;
+        }
+        .footer-container{
+            width:90%;
+            margin-left:20px;
+        }
+        }
+        @media(min-width:320px) and (max-width:768px){
+           .copyRights{
+            margin-bottom:30px;
+           }
+           .footer-contacts{
+            margin-bottom:30px;
+           }
+        }
+
+
+       

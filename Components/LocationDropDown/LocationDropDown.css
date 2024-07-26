@@ -1,0 +1,109 @@
+.dropdown-container {
+    position: relative;
+    width: 250px;
+    justify-content:center;
+    align-items: center;
+  }
+  .dropdown {
+    position: relative;
+    width:100%;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    height:50px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    padding:0 10px;
+  }
+  .dropdown-container.small {
+    width: 130px; 
+  }
+  .dropdown-selected {
+    width:100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+   .location-icon {
+    margin-right: 10px;
+    width:30px;
+    height:40px;
+  } 
+  .location-text {
+    flex: 1;
+    text-align: center;
+    color:rgb(218, 146, 3);
+  }
+  .dropdown-arrow {
+    margin-left:auto;
+    cursor:pointer;
+    width:50px;
+    height:40px;
+  } 
+  .dropdown-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .dropdown-container.small .location-text {
+    font-size: 10px;
+  }
+  .dropdown-container.small .dropdown-arrow {
+    width: 30px;
+    height: 29px;
+  }
+  .dropdown-container.small .location-icon{
+    width:24px;
+    height:25px;
+  }
+  .dropdown-container.small .dropdown-select option {
+    font-size: 10px;
+  }
+  @media (width: 768px){
+    .dropdown-container {
+      width:120px;
+    }
+    .location-text{
+      font-size:10px;
+    }
+    .location-icon{
+      width:19px;
+      height:19px;
+    }
+    .dropdown-arrow{
+      width:40px;
+      height:30px;
+    }
+    .dropdown{
+      height:40px;
+    }
+  } 
+   @media (width: 1024px){
+    .dropdown-container{ 
+      width:160px;
+    }
+    .location-icon{
+      width:23px;
+      height:21px;
+    }
+    .dropdown-arrow{
+      width:40px;
+    height:30px;
+    }
+    .location-text{
+      font-size:10px;
+    }
+   }
+   @media (width: 320px){
+    .dropdown-container.small {
+      width: 100px;
+    }
+   }
+
+  

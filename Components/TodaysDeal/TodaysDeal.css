@@ -1,0 +1,109 @@
+.deals-container {
+    padding: 20px;
+    position:relative;
+    margin-left:30px;
+  }
+.deals-wrapper {
+    position: relative;
+  }
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    margin-top:20px;
+    position: relative;
+    z-index: 2;
+  }
+  .deal-card {
+    border:none;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    background-color: white;
+    margin-top:190px;
+    margin-left:35px;
+    box-shadow: 1px 1px 1px 0 gray;
+  }
+  .deal-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .price {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .current-price {
+    color: red;
+    font-weight: bold;
+  }
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+  }
+  .price-container button {
+    background-color:rgb(255, 90, 29);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .background-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .deal-background{
+     border-radius: 20px;
+     }
+  .deal-background img{
+    width:300px;
+    height:300px;
+    border-radius: 20px;
+     }
+      @media (width: 1024px){
+        .deal-card{
+        margin-bottom:30px;
+        }
+      }
+      @media (width: 768px){
+        .deal-card{
+          margin-bottom:25px;
+        }
+      }
+      @media (max-width:430px){
+        .deal-card{
+          margin-bottom:30px;
+        }
+        .background-grid{
+          margin-left:10px;
+        }
+      }
+      @media (max-width:380px){
+        .deal-card{
+          margin-bottom:30px;
+          margin-left:22px;
+        }
+        .background-grid{
+          margin-left:-10px;
+        }
+      }
+      @media (max-width:320px){
+        .deal-card{
+          margin-bottom:30px;
+          margin-left:-8px;
+        }
+        .background-grid{
+          margin-left:-42px;
+        }
+        .deals-container h2{
+          margin-left:-28px;
+        }
+      }
+      

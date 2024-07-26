@@ -1,0 +1,152 @@
+/* .footer{
+    margin-left:29px;
+}
+
+.feature-box{
+    display: flex;
+}
+
+.features-container {
+    display: flex;
+    gap: 40px;
+    margin-left:53px;
+}
+.footer img{
+    width:100%;
+    margin-top:-24px;
+    height:500px;
+}
+.feature-box {
+    background-color: #fce6e6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height:60px;
+    display:flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+@media (width: 1024px){
+    .footer img{
+        height:550px;
+        margin-left:10px;
+    }
+    .features-container{
+        width:93%;
+        gap:10px;
+    }
+    .feature-box {
+        height:80px;
+        
+    }
+}
+
+@media (width: 768px){
+    .footer img{
+        height:550px;
+        margin-left:30px;
+    }
+    .features-container{
+        width:93%;
+        gap:8px;
+    }
+    .feature-box {
+        height:150px;
+        
+    }
+} */
+
+
+.footer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer img{
+    width:100%;
+    margin-top:-24px;
+    height:500px;
+}
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap as needed */
+    padding: 30px;
+  }
+  
+  .feature-box {
+    flex: 1 1 calc(10% - 15px); /* Adjust for gaps */
+    background-color: #fce3e3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature-box img {
+    max-width: 50px; /* Adjust the icon size */
+    margin-bottom: 10px;
+  }
+  
+  .feature-box h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+  }
+  
+  .feature-box p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+    .feature-box {
+      flex: 1 1 calc(15.333% - 10px); /* 3 boxes per row */
+    }
+    .footer img{
+        height:550px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .feature-box {
+      flex: 1 1 calc(30% - 10px); /* 2 boxes per row */
+    }
+    .footer img{
+        height:550px;
+    }
+    .features-container{
+        padding:15px 45px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .feature-box {
+      flex: 1 1 100%; /* 1 box per row */
+    }
+    .footer img{
+        display:none;
+    }
+  }
+  

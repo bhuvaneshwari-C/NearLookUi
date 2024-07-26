@@ -1,0 +1,55 @@
+.App1 {
+    text-align: center;
+    margin-top:15px;
+    margin-left:54px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .categoryNav{
+    display: flex;
+  }
+  .categoryNav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 190px;
+  }
+  .categoryNav li {
+    cursor: pointer;
+    display:inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight:700;
+    font-size: 19px;
+    transition: background-color 0.3s;
+  }
+  .categoryNav .selected {
+    color: orange;
+    font-weight: bold;
+  }
+   .categoryNav li:hover {
+    color: orange;
+  }
+ @media(min-width:390px) and (max-width:475px){
+    .categoryNav ul {
+      gap:10px;
+    }
+    .App1 {
+      margin-left:0px;
+    }
+    .categoryNav li{
+      font-size:17px;
+    } 
+  }
+  @media (min-width:320px) and (max-width:380px){
+    .categoryNav ul {
+      gap:5px;
+    }
+    .categoryNav li{
+      font-size:15px;
+    }
+    .App1 {
+      margin-left:0px;
+    }
+  }

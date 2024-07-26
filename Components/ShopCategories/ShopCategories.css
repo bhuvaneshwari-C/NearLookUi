@@ -1,0 +1,95 @@
+.categories-container{
+    position: relative;
+    width: 270px;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+   }
+   .categories-container.medium{
+    width: 140px; 
+  }
+  .categories-container.medium .categories-dropDown select {
+    width: 120px;
+    font-size: 10px;
+}
+.categories-container.medium .grid-icon{
+    font-size:25px;
+    padding:2px;
+}
+.categories-dropDown{
+    position: relative;
+    width:100%;
+    border:none;
+    border-radius: 6px;
+    height:50px;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    padding:0 10px;
+    color:white;
+    margin-left:10px;
+    background-color:orange ;
+    cursor: pointer;
+}
+.categories-dropDown select{
+  border: none;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  width:220px;
+  color:white;
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  padding:10px 0;
+  background-color:orange ;
+  cursor: pointer;
+}
+.grid-icon{
+    font-size: 30px;
+    padding:10px;
+}
+.categories-dropDown::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+select:focus {
+    outline: none;
+}
+    @media (width: 1024px){
+        .categories-container{
+            width:160px;
+            height:50px;
+        }
+        .categories-dropDown select{
+            width:200px;
+            font-size:11px;
+        }
+    }
+    @media (width: 768px){
+        .categories-container{
+            width:140px;
+            height:50px;
+            padding:0;
+        }
+        .categories-dropDown select{
+            width:160px;
+            font-size:10px;
+        }
+        .categories-dropDown{
+           padding:0;
+           margin:0;
+        }
+        .grid-icon{
+            padding:2px;
+        }
+    }
